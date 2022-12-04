@@ -12,6 +12,8 @@
         <td>
         <%= image_tag user.get_profile_image, size: '50x50' %></td>
         <td><%= user.name %></td>
+        <td><%= render 'stats' %></td>
+        <td><%= render 'follow_form' %></td>
         <td><%= link_to 'Show', user %></td>
       </tr>
     <% end %>
